@@ -1,0 +1,15 @@
+# data.yaml - configuración del dataset para YOLOv8.
+# Sin la clave 'path', ultralytics usa la carpeta de este archivo como raíz,
+# así que las rutas train/val/test son relativas a ecosort_ai/ y funcionan en cualquier PC.
+# Los nombres deben coincidir con CLASSES en config.py.
+train: dataset/images/train
+val: dataset/images/val
+test: dataset/images/test
+names:
+  0: plastic
+  1: metal
+  2: glass
+  3: paper
+  4: organic
+  5: cardboard
+  6: trash

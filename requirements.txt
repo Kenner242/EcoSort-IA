@@ -1,0 +1,40 @@
+# ============================================================
+# EcoSort AI - dependencias (Python 3.10+)
+# Instalar con: pip install -r requirements.txt
+# ============================================================
+
+# Detección de objetos YOLOv8 (incluye torch, torchvision, pyyaml, exportación NCNN)
+ultralytics>=8.3.0,<9.0
+
+# Dashboard web interactivo
+streamlit>=1.38.0,<2.0
+
+# Procesamiento de imágenes/video (versión headless: sin GUI, ideal para servidores y Raspberry Pi)
+opencv-python-headless>=4.8.0,<5.0
+
+# Gráficos interactivos del leaderboard
+plotly>=5.18.0,<7.0
+
+# Tablas de datos para el dashboard
+pandas>=2.0.0,<3.0
+
+# Manejo de imágenes (PIL)
+pillow>=10.0.0
+
+# Operaciones con arreglos numéricos
+numpy>=1.24.0,<2.3
+
+# Hash perceptual (phash) para detectar imágenes duplicadas
+imagehash>=4.3.1
+
+# Pruebas automatizadas
+pytest>=8.0.0
+
+# Control de GPIO: SOLO se instala en Raspberry Pi (Linux ARM).
+# En PC se omite automáticamente y raspi_controller.py usa un mock.
+RPi.GPIO>=0.7.1; sys_platform == "linux" and (platform_machine == "armv7l" or platform_machine == "aarch64")
+
+# NOTA: sqlite3 es parte de la librería estándar de Python (NO se instala).
+
+# Gemelo digital (lectura del robot por USB)
+pyserial

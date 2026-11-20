@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Instalar dependencias",
+            "type": "shell",
+            "command": "${command:python.interpreterPath} -m pip install -r requirements.txt",
+            "problemMatcher": []
+        },
+        {
+            "label": "Ejecutar pruebas",
+            "type": "shell",
+            "command": "${command:python.interpreterPath} -m pytest -v test_detector.py",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Lanzar dashboard",
+            "type": "shell",
+            "command": "${command:python.interpreterPath} -m streamlit run app.py",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+# OPCIONAL: necesario solo para el modo YOLO-World (reconoce muchos más residuos sin entrenar).
+# Requiere tener Git instalado (https://git-scm.com/download/win).
+# Instalar con:  pip install -r requirements-openvocab.txt
+ftfy
+regex
+git+https://github.com/ultralytics/CLIP.git
